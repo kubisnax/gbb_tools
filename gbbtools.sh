@@ -32,7 +32,7 @@ while true;do
       echo -e "gbb_flags set to \e[31m$(viewGbb)\e[0m";;
       Set )
       echo "Enter gbb_flag value: "
-      read -e gbbSet
+      read -e gbbSet #don't add 0x prefix
       setGbb
       echo -e "gbb_flags now set to \e[31m$(viewGbb)\e[0m";;
       Exit ) exit 0;;
